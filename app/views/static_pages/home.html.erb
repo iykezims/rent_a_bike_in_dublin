@@ -1,0 +1,21 @@
+<% provide(:title, "Home") %>
+<div class="mainCont">
+<%= image_tag("mainbike.jpg", alt: "Welcome Logo", :class => "welcomeIm") %>    
+    
+    
+<h2>Home</h2>
+
+
+<h1>Categories</h1>
+<br>
+
+  <% @categories.each do |category| %>
+       <div class="itemhols">
+           <p><%= category.title %></p>
+           <%= link_to (image_tag category.image, :class=>"itemholsIm"), category %>
+           <p><%= category.description %></p>
+         </div>
+    
+    <% end %>
+
+</div>
