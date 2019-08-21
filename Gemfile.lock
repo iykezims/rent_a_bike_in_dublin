@@ -212,10 +212,10 @@ DEPENDENCIES
   devise (~> 4.6, >= 4.6.2)
   duktape
   jbuilder (~> 2.5)
-  pg (= 0.17.1)
+  pg
   puma (~> 3.11)
   rails (~> 5.2.3)
-  rails_12factor (= 0.0.2)
+  rails_12factor
   sass-rails (~> 5.0)
   selenium-webdriver
   sqlite3
