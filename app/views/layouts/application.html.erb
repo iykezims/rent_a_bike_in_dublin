@@ -36,14 +36,11 @@
 
         <% end %>
          <% if user_signed_in? %>
-        <% if session[:login] == 1 %> 
-          <li><%= link_to "Admin Logout", logout_path %></li>
-          
-        <% else %>
         
-          <li><%= link_to "Admin Login", login_path %></li>
-        <% end %>
-        <% end %>
+         <li><%= link_to "Admin", rails_admin_path %></li>
+          
+         <% end %>
+
         <% if user_signed_in? %>
           <li><%= link_to "Category", categories_path %></li>
         <% end %>  
@@ -63,13 +60,6 @@
      <%= yield %>
     </div>
 
-    <footer class="foot">
-     <% if session[:login] == 1 %>    
-     <%= link_to 'New Item', new_item_path, :class =>"button", :role=>"button" %>
-     <%= link_to 'New Category', new_category_path, :class =>"button", :role=>"button"  %>
-     <% end %>
-
-    </footer>
-
+    
   </body>
 </html>

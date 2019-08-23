@@ -3,7 +3,7 @@ class UserController < ApplicationController
     before_action :authenticate_user!, only: [:new, :edit, :destroy]
 
     def admin
-        
+                
     end 
 
 
