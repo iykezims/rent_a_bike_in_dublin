@@ -6,7 +6,7 @@ ruby '2.5.5'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 gem 'puma', '~> 3.11'
-gem 'devise', '~> 4.6', '>= 4.6.2'
+gem 'devise', '~> 4.7'
 gem 'rails_admin', '~> 2.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
